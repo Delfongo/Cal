@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.calculator {
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+  
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+}
+  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+  
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #eeeeeee5;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #ddd;
+} */
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(139, 139, 139);
+}
+.calculator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 430px;
+  background: #021e336e;
+  padding: 25px;
+  border-radius: 15px;
+  
+}
+input:not(.text){
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+input:hover:not(.text,.operator){
+  background: rgb(180, 180, 180);
+  color: #0e4166;
+}
+.operator{
+  color: #0e4166;
+  background: rgb(179, 179, 179) !important;
+  transition: 0.5s;
+}
+.operator:hover{
+  color: rgb(179, 179, 179);
+  background: #0e4166 !important;
+}
+.output .text{
+  width: 100%;
+  height: 70px;
+  padding-right: 20px;
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+.calculator .equal{
+  width: 160px;
+  border-radius: 50px;
+}
+.calculator .AC{
+  width: 160px;
+  border-radius: 50px;
+}
